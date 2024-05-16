@@ -10,8 +10,8 @@ import java.util.UUID;
 public class OrderCodeGenerator implements IOrderCodeGenerator {
     @Override
     public UUID generate() {
-        String date = java.time.LocalDate.now().toString().replace("-", "");
-        String id = date + (new Random().nextInt(100));
-        return UUID.fromString(id);
+        //String date = java.time.LocalDate.now().toString().replace("-", "");
+        //String id = date + (new Random().nextInt(100));
+        return UUID.randomUUID();
     }
 }
